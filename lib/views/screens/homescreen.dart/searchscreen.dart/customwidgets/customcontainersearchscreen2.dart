@@ -2,7 +2,22 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CustomContainerSearchScreen2 extends StatelessWidget {
-  const CustomContainerSearchScreen2({
+  final String avatarText;
+  final String clubName;
+  final String membersCount;
+  final String buttonText;
+  final String additionalText;
+  final IconData icon;
+  final String? iconText;
+
+  CustomContainerSearchScreen2({
+    required this.avatarText,
+    required this.clubName,
+    required this.membersCount,
+    required this.buttonText,
+    required this.additionalText,
+    required this.icon,
+    this.iconText,
     super.key,
   });
 
@@ -24,17 +39,19 @@ class CustomContainerSearchScreen2 extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                // Icon(Icons.text_format),
-                const Row(
+                CircleAvatar(
+                  child: Text(avatarText),
+                ),
+                Row(
                   children: [
                     Column(
                       children: [
                         Text(
-                          ' Clubhouse HQ',
-                          style: TextStyle(fontWeight: FontWeight.bold),
+                          clubName,
+                          style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
                         Text(
-                          '150k members',
+                          membersCount,
                           style: TextStyle(fontSize: 10),
                         )
                       ],
@@ -50,9 +67,9 @@ class CustomContainerSearchScreen2 extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.blue,
                           borderRadius: BorderRadius.circular(10)),
-                      child: const Text(
-                        'join',
-                        style: TextStyle(color: Colors.white),
+                      child: Text(
+                        buttonText,
+                        style: const TextStyle(color: Colors.white),
                       ),
                     ),
                   ],
@@ -60,10 +77,21 @@ class CustomContainerSearchScreen2 extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
-            const Text('The Official  Clubhouse HQ'),
-            const Icon(Icons.more_horiz, size: 20, color: Colors.grey)
+            Text(additionalText),
+            const SizedBox(
+              height: 10,
+            ),
+            Row(
+              children: [
+                Icon(icon, size: 20, color: Colors.grey),
+                const SizedBox(
+                  width: 10,
+                ),
+                if (iconText != null) Text(iconText!)
+              ],
+            ),
           ],
         ),
       ),
