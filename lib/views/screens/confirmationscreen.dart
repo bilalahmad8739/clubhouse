@@ -1,4 +1,3 @@
-import 'package:clubhouse/views/screens/components/countrypickercontainer.dart';
 import 'package:clubhouse/views/screens/components/customcontainer.dart';
 import 'package:flutter/material.dart';
 
@@ -45,9 +44,8 @@ class ConfirmationScreen extends StatelessWidget {
                         style: TextStyle(color: Colors.blue, fontSize: 16),
                       )),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 210),
-                    child: CustomContainer(color: Colors.blue, text: 'next'),
-                  )
+                      padding: EdgeInsets.symmetric(vertical: 210),
+                      child: CustomContainer(color: Colors.blue, text: 'Next'))
                 ],
               ),
             ),

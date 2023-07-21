@@ -22,9 +22,9 @@ class CountryContainer extends StatelessWidget {
                       onTap: () {
                         print('click');
                       },
-                      child: Icon(Icons.arrow_drop_down)),
+                      child: const Icon(Icons.arrow_drop_down)),
                   hintText: 'phone number',
-                  contentPadding: EdgeInsets.symmetric(
+                  contentPadding: const EdgeInsets.symmetric(
                     horizontal: 10,
                   )),
             ))
