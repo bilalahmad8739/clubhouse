@@ -55,13 +55,13 @@ class _SplashScreenState extends State<SplashScreen> {
                       child: Column(
                         children: [
                           InkWell(
-                            onTap: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => SignUpScreen()));
-                            },
                             child: CustomContainer(
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => SignUpScreen()));
+                              },
                               color: Colors.blue,
                               text: 'sign up',
                             ),

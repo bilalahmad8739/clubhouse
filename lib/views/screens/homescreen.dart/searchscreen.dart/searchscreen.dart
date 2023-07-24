@@ -13,7 +13,9 @@ class SearchScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xffffffff),
       appBar: AppBar(
-          toolbarHeight: 120, flexibleSpace: const CustomappbarSearchScreen()),
+          automaticallyImplyLeading: false,
+          toolbarHeight: 120,
+          flexibleSpace: const CustomappbarSearchScreen()),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),

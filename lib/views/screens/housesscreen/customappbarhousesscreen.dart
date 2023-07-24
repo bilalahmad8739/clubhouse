@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CustomappbarSearchScreen extends StatelessWidget {
-  const CustomappbarSearchScreen({
+class CustomappbarHousesScreen extends StatelessWidget {
+  const CustomappbarHousesScreen({
     super.key,
   });
 
@@ -22,30 +22,24 @@ class CustomappbarSearchScreen extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'clubhouse',
+                      'houses',
                       style: GoogleFonts.chelaOne(fontSize: 25),
                     ),
                   ],
                 ),
-                Row(
+                const Row(
                   children: [
-                    const Icon(Icons.notifications_outlined),
-                    const SizedBox(
+                    Text(
+                      'edit',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    SizedBox(
                       width: 20,
                     ),
-                    const Icon(Icons.send),
-                    const SizedBox(
-                      width: 20,
+                    Icon(
+                      Icons.add,
+                      size: 40,
                     ),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 5, vertical: 5),
-                      height: 30,
-                      width: 30,
-                      decoration: const BoxDecoration(
-                          shape: BoxShape.circle, color: Color(0XFFD7BBF5)),
-                      child: const Text('BA'),
-                    )
                   ],
                 )
               ],
@@ -62,7 +56,7 @@ class CustomappbarSearchScreen extends StatelessWidget {
               child: const TextField(
                 textAlign: TextAlign.left,
                 decoration: InputDecoration(
-                    hintText: 'search houses, people, rooms...',
+                    hintText: 'search your houses',
                     hintStyle: TextStyle(fontSize: 15),
                     prefixIcon: Icon(
                       Icons.search,

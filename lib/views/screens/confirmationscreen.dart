@@ -1,4 +1,5 @@
 import 'package:clubhouse/views/screens/components/customcontainer.dart';
+import 'package:clubhouse/views/screens/mybottomnavigationbar.dart';
 import 'package:flutter/material.dart';
 
 class ConfirmationScreen extends StatelessWidget {
@@ -45,7 +46,16 @@ class ConfirmationScreen extends StatelessWidget {
                       )),
                   Padding(
                       padding: EdgeInsets.symmetric(vertical: 210),
-                      child: CustomContainer(color: Colors.blue, text: 'Next'))
+                      child: CustomContainer(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        MyBottomNavigationBar()));
+                          },
+                          color: Colors.blue,
+                          text: 'Next'))
                 ],
               ),
             ),

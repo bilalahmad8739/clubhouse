@@ -1,23 +1,22 @@
-import 'package:clubhouse/views/screens/callscreen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import '../sigupscreen.dart';
 
 class CustomContainer extends StatelessWidget {
   Color color;
   String text;
+  final VoidCallback onPressed;
   CustomContainer({
     required this.color,
     required this.text,
+    required this.onPressed,
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => CallScreen()));
-      },
+      onTap: onPressed,
       child: Container(
         height: 50,
         width: 190,

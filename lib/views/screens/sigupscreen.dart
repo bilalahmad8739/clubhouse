@@ -1,3 +1,5 @@
+import 'package:clubhouse/views/screens/callscreen.dart';
+import 'package:clubhouse/views/screens/confirmationscreen.dart';
 import 'package:country_code_picker/country_code_picker.dart';
 
 import 'package:flutter/material.dart';
@@ -90,6 +92,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 Padding(
                     padding: const EdgeInsets.symmetric(vertical: 270),
                     child: CustomContainer(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => ConfirmationScreen()));
+                      },
                       text: 'next',
                       color: Colors.blue,
                     )),

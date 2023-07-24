@@ -2,6 +2,7 @@ import 'package:clubhouse/views/screens/callscreen.dart';
 import 'package:clubhouse/views/screens/confirmationscreen.dart';
 import 'package:clubhouse/views/screens/homescreen.dart/homescreen.dart';
 import 'package:clubhouse/views/screens/homescreen.dart/searchscreen.dart/searchscreen.dart';
+import 'package:clubhouse/views/screens/housesscreen/housesscreen.dart';
 import 'package:flutter/material.dart';
 
 class MyBottomNavigationBar extends StatefulWidget {
@@ -16,7 +17,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
   static final List<Widget> _pages = [
     const HomeScreen(),
     const SearchScreen(),
-    const ConfirmationScreen()
+    const HousesScreen()
   ];
   @override
   Widget build(BuildContext context) {

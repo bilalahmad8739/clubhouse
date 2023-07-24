@@ -1,6 +1,7 @@
 import 'package:clubhouse/core/test.dart';
 import 'package:clubhouse/views/screens/homescreen.dart/homescreen.dart';
 import 'package:clubhouse/views/screens/mybottomnavigationbar.dart';
+import 'package:clubhouse/views/screens/splashscreen.dart';
 
 import 'package:flutter/material.dart';
 
@@ -21,13 +22,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: MyBottomNavigationBar()
-        // MyApps()
-
-        //HomeScreen()
-        //SplashScreen()
-        //CallScreen(),
-        //SplashScreen(),
-        );
+        home: const SplashScreen());
   }
 }
