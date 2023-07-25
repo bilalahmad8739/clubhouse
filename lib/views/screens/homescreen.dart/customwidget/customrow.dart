@@ -18,10 +18,10 @@ class CustomContainerHomeScreen extends StatelessWidget {
               width: 60,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(25),
-                  color: Color(0xffC4D7B2)),
+                  color: const Color(0xffC4D7B2)),
               child: const Text('4/12'),
             ),
-            Text('finish setup ')
+            const Text('finish setup ')
           ],
         ),
         const SizedBox(

@@ -1,12 +1,13 @@
-import 'package:clubhouse/views/screens/callscreen.dart';
-import 'package:clubhouse/views/screens/confirmationscreen.dart';
+import 'package:clubhouse/core/constant.dart';
+import 'package:clubhouse/views/screens/callscreen/callscreen.dart';
+import 'package:clubhouse/views/screens/confirmationscreen/confirmationscreen.dart';
 import 'package:country_code_picker/country_code_picker.dart';
 
 import 'package:flutter/material.dart';
 
-import 'components/countrypickercontainer.dart';
-import 'components/customcontainer.dart';
-import 'components/customtextspan.dart';
+import '../components/countrypickercontainer.dart';
+import '../components/customcontainer.dart';
+import '../components/customtextspan.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -22,7 +23,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -35,7 +35,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
-                        color: Colors.black),
+                        color: ConstantColors.blackColor),
                   ),
                 ),
 
@@ -96,10 +96,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => ConfirmationScreen()));
+                                builder: (context) =>
+                                    const ConfirmationScreen()));
                       },
                       text: 'next',
-                      color: Colors.blue,
+                      color: ConstantColors.blueColor,
                     )),
               ],
             ),

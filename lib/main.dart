@@ -1,7 +1,6 @@
-import 'package:clubhouse/core/test.dart';
 import 'package:clubhouse/views/screens/homescreen.dart/homescreen.dart';
-import 'package:clubhouse/views/screens/mybottomnavigationbar.dart';
-import 'package:clubhouse/views/screens/splashscreen.dart';
+import 'package:clubhouse/views/screens/bottomnavigatonbar/mybottomnavigationbar.dart';
+import 'package:clubhouse/views/screens/splashscreen/splashscreen.dart';
 
 import 'package:flutter/material.dart';
 

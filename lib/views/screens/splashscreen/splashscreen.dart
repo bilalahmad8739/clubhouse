@@ -1,8 +1,9 @@
-import 'package:clubhouse/views/screens/sigupscreen.dart';
+import 'package:clubhouse/core/constant.dart';
+import 'package:clubhouse/views/screens/signupscreen/sigupscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'components/customcontainer.dart';
+import '../components/customcontainer.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -24,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
                   padding: const EdgeInsets.symmetric(vertical: 90),
                   child: AnimatedContainer(
                     transformAlignment: Alignment.centerLeft,
-                    duration: Duration(seconds: 2),
+                    duration: const Duration(seconds: 2),
                     curve: Curves.bounceOut,
                     child: Column(
                       children: [
@@ -36,14 +37,13 @@ class _SplashScreenState extends State<SplashScreen> {
                         const SizedBox(
                           height: 10,
                         ),
-                        Text('Clubhouse',
-                            style: GoogleFonts.chelaOne(fontSize: 50)),
+                        Text('Clubhouse', style: ConstantColors.googleFonts),
                         const Text(
                           'hang out with friends,meet new  ',
-                          style: TextStyle(color: Colors.black),
+                          style: TextStyle(color: ConstantColors.blackColor),
                         ),
                         const Text('once,and talk about anything. ',
-                            style: TextStyle(color: Colors.black)),
+                            style: TextStyle(color: ConstantColors.blackColor)),
                       ],
                     ),
                   ),
@@ -60,13 +60,15 @@ class _SplashScreenState extends State<SplashScreen> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => SignUpScreen()));
+                                        builder: (context) =>
+                                            const SignUpScreen()));
                               },
                               color: Colors.blue,
                               text: 'sign up',
                             ),
                           ),
-                          TextButton(onPressed: () {}, child: Text('log in '))
+                          TextButton(
+                              onPressed: () {}, child: const Text('log in '))
                         ],
                       ),
                     ),

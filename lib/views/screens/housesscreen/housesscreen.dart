@@ -29,7 +29,7 @@ class HousesScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.white),
                     child: Padding(
-                      padding: EdgeInsets.all(30.0),
+                      padding: const EdgeInsets.all(30.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [

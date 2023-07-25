@@ -1,5 +1,6 @@
+import 'package:clubhouse/core/constant.dart';
 import 'package:clubhouse/views/screens/components/customcontainer.dart';
-import 'package:clubhouse/views/screens/mybottomnavigationbar.dart';
+import 'package:clubhouse/views/screens/bottomnavigatonbar/mybottomnavigationbar.dart';
 import 'package:flutter/material.dart';
 
 class ConfirmationScreen extends StatelessWidget {
@@ -12,7 +13,7 @@ class ConfirmationScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Center(
             child: Padding(
-              padding: EdgeInsets.symmetric(vertical: 40),
+              padding: const EdgeInsets.symmetric(vertical: 40),
               child: Column(
                 children: [
                   const Text(
@@ -42,17 +43,18 @@ class ConfirmationScreen extends StatelessWidget {
                       onPressed: () {},
                       child: const Text(
                         "didn't get it? tap to resend.",
-                        style: TextStyle(color: Colors.blue, fontSize: 16),
+                        style: TextStyle(
+                            color: ConstantColors.blueColor, fontSize: 16),
                       )),
                   Padding(
-                      padding: EdgeInsets.symmetric(vertical: 210),
+                      padding: const EdgeInsets.symmetric(vertical: 210),
                       child: CustomContainer(
                           onPressed: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
                                     builder: (context) =>
-                                        MyBottomNavigationBar()));
+                                        const MyBottomNavigationBar()));
                           },
                           color: Colors.blue,
                           text: 'Next'))

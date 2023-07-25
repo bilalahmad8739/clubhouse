@@ -1,6 +1,7 @@
+import 'package:clubhouse/core/constant.dart';
 import 'package:flutter/material.dart';
 
-import '../sigupscreen.dart';
+import '../signupscreen/sigupscreen.dart';
 
 class CustomContainer extends StatelessWidget {
   Color color;
@@ -31,12 +32,12 @@ class CustomContainer extends StatelessWidget {
               text,
               style: const TextStyle(
                   fontSize: 20,
-                  color: Colors.white,
+                  color: ConstantColors.whiteColor,
                   fontWeight: FontWeight.bold),
             ),
             const Icon(
               Icons.arrow_forward,
-              color: Colors.white,
+              color: ConstantColors.whiteColor,
             ),
           ],
         ),

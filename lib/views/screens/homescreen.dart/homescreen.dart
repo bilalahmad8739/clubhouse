@@ -1,4 +1,3 @@
-import 'package:clubhouse/views/screens/components/customcontainer.dart';
 import 'package:clubhouse/views/screens/homescreen.dart/customwidget/customrow.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
